@@ -1,0 +1,25 @@
+{
+  "extends": "tslint-config-airbnb",
+  "rules": {
+    "import-name": [
+      false
+    ],
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "check-format",
+      "allow-leading-underscore",
+      "allow-pascal-case",
+      "allow-snake-case"
+    ],
+    "no-unused-vars": ["error", { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }],
+    "no-consecutive-blank-lines": true,
+    "no-this-assignment": false,
+    "max-line-length": [ false ],
+    "eofline": false,
+    "object-curly-spacing": [2, "never"],
+    "whitespace": [
+      false
+    ]
+  }
+}

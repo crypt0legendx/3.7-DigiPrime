@@ -1,0 +1,73 @@
+.add-focus-sector {
+  .first-form {
+    position: relative;
+    &:after{
+      content: '';
+      display: block;
+      height: 100%;
+      width: 1px;
+      position: absolute;
+      background: #DFE0EB;
+      top: 0;
+      right: -50px;
+    }
+  }
+  .action {
+    position: absolute;
+    right: -80px;
+    top: 40%;
+    z-index: 55;
+    height: 60px;
+    text-align: center;
+    background: #F7F7F7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    svg {
+      position: relative;
+      top: 0;
+      cursor: pointer;
+      font-size: 20px;
+      right: -2px;
+    }
+    p {
+      font-size: 12px;
+      margin: 0;
+    }
+  }
+  .second-form {
+    position: relative;
+    &:before{
+      content: '';
+      display: block;
+      height: 100%;
+      width: 1px;
+      position: absolute;
+      background: #DFE0EB;
+      top: 0;
+      left: -50px;
+    }
+    .action {
+      position: absolute;
+      left: -82px;
+      right: 0;
+      top: 40%;
+      z-index: 55;
+      height: 60px;
+      background: #F7F7F7;
+      width: 70px;
+      svg {
+        position: relative;
+        top: 0;
+        cursor: pointer;
+        font-size: 20px;
+        left: -2px;
+      }
+      p {
+        font-size: 12px;
+        margin: 0;
+      }
+    }
+  }
+}

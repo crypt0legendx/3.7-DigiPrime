@@ -1,0 +1,17 @@
+{
+  "presets": [
+    "@babel/env",
+    "@babel/react",
+    "@babel/typescript",
+    "@emotion/css-prop"
+  ],
+  "plugins": [
+    "react-hot-loader/babel",
+    "@babel/plugin-syntax-dynamic-import",
+    ["@babel/plugin-proposal-decorators", { "legacy": true }],
+    ["@babel/plugin-proposal-class-properties", { "loose": true }],
+    "transform-function-bind",
+    "macros",
+    "emotion"
+  ]
+}

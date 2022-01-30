@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>DigiPrime</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jvectormap/2.0.4/jquery-jvectormap.css" type="text/css" media="screen"/>
+    <script>
+      if (!Array.prototype.find) {
+        // we're in a browser so outdated that our detection will break :(
+        window.location.replace("/frontend/update-browser.html");
+      }
+    </script>
+    <script src="https://unpkg.com/bowser@2.4.0/es5.js"></script>
+    <script>
+        var browser = bowser.getParser(window.navigator.userAgent);
+        var isValidBrowser = browser.satisfies({
+          chrome: ">=67",
+          firefox: ">=60",
+          edge: ">=18",
+          safari: ">=11"
+        });
+        if (!isValidBrowser) {
+          window.location.replace("/frontend/update-browser.html");
+        }
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>
